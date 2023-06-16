@@ -10,7 +10,7 @@ export default function Form({ onAddActivity }) {
     } else {
       data.isForGoodWeather = false;
     }
-    onAddActivity(data.name, data.isForGoodWeather.checked);
+    onAddActivity(data);
 
     event.target.reset();
     event.target.elements.name.focus();

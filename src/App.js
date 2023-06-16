@@ -9,7 +9,6 @@ export default function App() {
   });
   function handleAddActivity(newActivity) {
     setActivities([...activities, { id: uid(), ...newActivity }]);
-    console.log(activities);
   }
 
   return (

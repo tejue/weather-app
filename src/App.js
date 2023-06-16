@@ -1,10 +1,8 @@
-import "./App.css";
-import Form from "./components/Form/index";
+import Form from "./components/Form/index.js";
 
 export default function App() {
   return (
     <>
-      <div className=".App">Test</div>;
       <Form />
     </>
   );

@@ -1,10 +1,5 @@
-//import './App.css';
-import Form from "./components/Form/index";
+import "./App.css";
 
 export default function App() {
-  return (
-    <div>
-      <Form />
-    </div>
-  );
+  return <div className=".App">Test</div>;
 }

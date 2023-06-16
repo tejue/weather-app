@@ -11,7 +11,7 @@ export default function Form({ onAddActivity }) {
       name: formElements.name.value,
       isForGoodWeather: formElements.isForGoodWeather.checked,
     };
-    console.log(data);
+
     onAddActivity(data);
     form.reset();
     formElements.name.focus();

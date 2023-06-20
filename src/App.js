@@ -11,10 +11,15 @@ export default function App() {
     setActivities([...activities, { id: uid(), ...newActivity }]);
   }
 
+  const isGoodWeather = true;
+  const sunnyActivities = activities.filter((activity) => {
+    return activity.isForGoodWeather === isGoodWeather;
+  });
+
   return (
     <div>
       <Form onAddActivity={handleAddActivity} />
-      <List activities={activities} />
+      <List activities={sunnyActivities} isGoodWeather={isGoodWeather} />
     </div>
   );
 }
